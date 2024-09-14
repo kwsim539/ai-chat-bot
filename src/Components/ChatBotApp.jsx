@@ -60,12 +60,11 @@ const ChatBotApp = ({onEndChat, chats, setChats, activeChat, setActiveChat, onNe
             setChats(updatedChats);
             localStorage.setItem('chats', JSON.stringify(updatedChats));
             setIsTyping(true);
-
             const response  = await fetch('https://api.openai.com/v1/chat/completions', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json',
-                    Authorization: 'Bearer sk-DJ2Vy-FEGqPgotxUKFtjYg3nEWY4YHlCHVKIKaFeFNT3BlbkFJwv3mwLqE4Ldlk2dSMWnAQKgZPZxgy0InZXuDC8fOgA',
+                    Authorization: `${import.meta.env.VITE_OPEN_AI_API_KEY}`,
                 },
                 body: JSON.stringify({
                     model: 'gpt-3.5-turbo',
