@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import {useEffect, useState} from 'react';
 import ChatBotStart from './Components/ChatBotStart.jsx'
 import ChatBotApp from "./Components/ChatBotApp.jsx";
 import {v4 as uuidv4} from 'uuid';

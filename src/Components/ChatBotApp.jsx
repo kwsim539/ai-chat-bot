@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
+import {useEffect, useRef, useState} from 'react';
 import './ChatBotApp.css';
 import Picker from '@emoji-mart/react';
 import data from '@emoji-mart/data';

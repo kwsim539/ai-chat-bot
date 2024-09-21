@@ -1,4 +1,3 @@
-import React from 'react';
 import './ChatBotStart.css';
 const ChatBotStart = ({onStartChat}) => {
     return (
